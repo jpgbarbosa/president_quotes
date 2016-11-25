@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @president.name %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @president.country %>
+</p>
+
+<%= link_to 'Quotes', quotes_path(president_id: @president.id) %> |
+<%= link_to 'Edit', edit_president_path(@president) %> |
+<%= link_to 'Back', presidents_path %>
